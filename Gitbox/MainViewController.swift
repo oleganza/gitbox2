@@ -1,14 +1,6 @@
-//
-//  ViewController.swift
-//  Gitbox
-//
-//  Created by Oleg Andreev on 28/Jan/18.
-//  Copyright © 2018 Oleg Andreev. All rights reserved.
-//
-
 import Cocoa
 
-class ViewController: NSViewController {
+class MainViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
