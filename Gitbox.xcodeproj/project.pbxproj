@@ -36,6 +36,7 @@
 		2059C221201EDE5200BEA201 /* GitboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitboxTests.swift; sourceTree = "<group>"; };
 		2059C223201EDE5200BEA201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2059C22C201EE6EE00BEA201 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		2059C22D201EF38E00BEA201 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 				2059C20D201EDE5200BEA201 /* Gitbox */,
 				2059C220201EDE5200BEA201 /* GitboxTests */,
 				2059C20C201EDE5200BEA201 /* Products */,
+				2059C22D201EF38E00BEA201 /* README.md */,
 				2059C22C201EE6EE00BEA201 /* LICENSE.md */,
 			);
 			sourceTree = "<group>";
