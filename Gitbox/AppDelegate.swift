@@ -1,8 +1,8 @@
 import Cocoa
 
 class Later {
-    var blocks: [()->()] = [];
-    var done: Bool = false;
+    var blocks: [()->()] = []
+    var done: Bool = false
     
     func perform(block: @escaping ()->()) {
         if self.done {
@@ -25,10 +25,14 @@ class Later {
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    var launched: Later = Later();
+    var launched: Later = Later()
+    var mainWindowController: NSWindowController?
     
     func showMainWindow() {
-        // TODO: show main window
+        if self.mainWindowController == nil {
+            self.mainWindowController = NSStoryboard.main?.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("MainWindowController")) as? NSWindowController;
+        }
+        self.mainWindowController?.window?.makeKeyAndOrderFront(nil);
     }
     
     
@@ -43,7 +47,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(_ notif: Notification) {
-        self.launched.complete()
+        showMainWindow()
+        launched.complete()
     }
 
     func applicationWillTerminate(_ notif: Notification) {
